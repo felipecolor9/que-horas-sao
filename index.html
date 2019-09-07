@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=”description” content='Horário'>
+    <title>Que horas são</title>
+
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="script/Animations.js"></script>
+    <script src="script/Clock.js"></script>
+</head>
+
+<body onload="init(), fadeIn('title_page', 400, 3), fadeIn('box1', 1200, 3), fadeIn('left_container_item1', 2000, 2), fadeIn('left_container_item2', 2050, 2), fadeIn('left_container_item3', 2100, 2)">
+
+    <div id="title_page"> Que horas são?</div>
+
+    <section class="container" id="left_container">
+        <ul id="left_container_links">
+            <li class="left_container_item" id="left_container_item1">A</li>
+            <li class="left_container_item" id="left_container_item2">B</li>
+            <li class="left_container_item" id="left_container_item3">C</li>
+        </ul>
+    </section>
+
+    <section class="container" id="center_container">
+        <div class="box" id="box1">
+            <div id="horas" class="txt"></div>
+            <div id="box1img">
+                <img id="img" src="image/white.jpg" alt="">
+            </div>
+            <div id="box1txt" class="txt">
+                "Não há lugar para a sabedoria onde não há paciência" <i> Santo Agostinho</i>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <h2 style="margin: 0">&copy Felipe Marques, 2019.</h2>
+        <p style="margin: 12px" <br> 20 anos, estudante de ciência da computação, aspirante a desenvolvedor,
+            <br>apaixonado por música e arte. Atualmente estudando HTML/CSS/JS e JAVA.
+            <br><br><b>Contato:</b><br>
+            <a href="https://github.com/felipecolor9" id="git_link" class="social_media_link" target="_blank" rel="noopener"><i class=" fab fa-github fa-3x " "></i>
+            </a>
+            <a href="#" id="wpp_link"><i class="fab fa-whatsapp fa-3x" target="_blank"></i></a>
+            <a href="https://www.facebook.com/QuinnCansada" id="fb_link"><i class="fab fa-facebook fa-3x" target="_blank"rel="noopener"></i></a>
+            <a href="https://www.instagram.com/lipe.makaveli/" id="ig_link" target="_blank"><i class="fab fa-instagram fa-3x"rel="noopener"></i></a>
+
+    </footer>
+
+
+</body>
+
+
+</html>

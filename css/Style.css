@@ -1,0 +1,116 @@
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: monospace;
+        margin: 0;
+    }
+    
+    footer {
+        box-shadow: 8px 8px 8px 8px #0000007e;
+        background: #cac5c531;
+        position: fixed;
+        margin: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4em;
+        padding-top: 15px;
+        text-align: center;
+        transition: height 1s;
+        -webkit-transition: height 1s;
+    }
+    
+    footer:hover {
+        height: 160px;
+    }
+    
+    .box {
+        background: #ffffff;
+        height: 410px;
+        width: 400px;
+        border-radius: 50px;
+        padding: 12px;
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: 7px 7px 7px #00000062;
+        transition: .1s ease-in;
+        display: none
+    }
+    
+    .box:hover {
+        background-color: #cccccc;
+    }
+    
+    .txt {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .container {
+        height: 410px;
+        margin: auto;
+    }
+    
+    .left_container_item {
+        text-decoration-color: black;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: white;
+        margin: 1em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 5em;
+        height: 5em;
+        border-radius: 70px;
+        box-shadow: 1px 1px 1px 1px #0000007a;
+        transition: .1s ease-in;
+        display: none
+    }
+    
+    #title_page {
+        font-size: 30pt;
+        text-align: center;
+        padding: 20px;
+        display: none
+    }
+    
+    #left_container_item1:hover {
+        background: #d39d4c;
+    }
+    
+    #left_container_item2:hover {
+        background: #d39d4c;
+    }
+    
+    #left_container_item3:hover {
+        background: #d39d4c;
+    }
+    
+    #left_container {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin-left: 0;
+    }
+    
+    #left_container_links {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 0;
+    }
+    
+    #git_link,
+    #wpp_link,
+    #fb_link,
+    #ig_link {
+        text-decoration: none;
+        color: black;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
