@@ -1,30 +1,29 @@
 function init() {
-    let box = window.document.querySelector('div#box1')
     let img = window.document.querySelector('img#img')
     let txt2 = window.document.querySelector('div#horas')
     var data = new Date()
-    let horaAtual = data.getHours()
-    let minAtual = data.getMinutes()
+    let actualHour = data.getHours()
+    let actualMin = data.getMinutes()
 
     setInterval(() => {
-            minAtual += 1
-            if (minAtual == 60) {
-                minAtual = 0
+            actualMin += 1
+            if (actualMin == 60) {
+                actualMin = 0
 
-                horaAtual += 1
-                if (horaAtual == 24) {
-                    horaAtual = 0
+                actualHour += 1
+                if (actualHour == 24) {
+                    actualHour = 0
                 }
             }
 
-            minAtual < 10 ? txt2.innerHTML = `Agora são ${horaAtual}:0${minAtual} ` : txt2.innerHTML = `Agora são ${horaAtual}:${minAtual} `
+            actualMin < 10 ? txt2.innerHTML = `Agora são ${actualHour}:0${actualMin} ` : txt2.innerHTML = `Agora são ${actualHour}:${actualMin} `
                 //dia
-            if (horaAtual >= 5 && horaAtual <= 15) {
+            if (actualHour >= 5 && actualHour <= 15) {
                 img.src = 'image/8bitday.png'
                 img.alt = "Nesse momento, o sol irradia a cidade de Recife"
                 document.body.style.background = '#44AAAD'
                     //fim de tarde
-            } else if (horaAtual >= 16 && horaAtual <= 18) {
+            } else if (actualHour >= 16 && actualHour <= 18) {
                 img.src = 'image/8bitmorning.png'
                 img.alt = "O pôr do sol no oeste anuncia a noite na região metropolitana"
                 document.body.style.background = '#db8c74'
@@ -36,16 +35,16 @@ function init() {
             }
         }, 60000) //1 min
 
-    minAtual < 10 ? txt2.innerHTML = `Agora são ${horaAtual}:0${minAtual} ` : txt2.innerHTML = `Agora são ${horaAtual}:${minAtual} `
+    actualMin < 10 ? txt2.innerHTML = `Agora são ${actualHour}:0${actualMin} ` : txt2.innerHTML = `Agora são ${actualHour}:${actualMin} `
 
 
     //dia
-    if (horaAtual >= 5 && horaAtual <= 15) {
+    if (actualHour >= 5 && actualHour <= 15) {
         img.src = 'image/8bitday.png'
         img.alt = "Nesse momento, o sol irradia a cidade de Recife"
         document.body.style.background = '#44AAAD'
             //fim de tarde
-    } else if (horaAtual >= 16 && horaAtual <= 18) {
+    } else if (actualHour >= 16 && actualHour <= 18) {
         img.src = 'image/8bitmorning.png'
         img.alt = "O pôr do sol no oeste anuncia a noite na região metropolitana"
         document.body.style.background = '#db8c74'

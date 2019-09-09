@@ -28,9 +28,10 @@
     }
     
     .box {
+        text-overflow: ellipsis;
         background: #ffffff;
-        height: 410px;
-        width: 400px;
+        height: 100%;
+        width: 30%;
         border-radius: 50px;
         padding: 12px;
         margin: 0 auto;
@@ -38,6 +39,11 @@
         box-shadow: 7px 7px 7px #00000062;
         transition: .1s ease-in;
         display: none
+    }
+    
+    #img {
+        height: 90%;
+        width: 90%;
     }
     
     .box:hover {
