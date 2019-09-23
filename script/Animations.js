@@ -12,7 +12,7 @@ function fadeIn(element, timePostLoad, fadeDuration) {
     function process(element, time) {
         let opacity = 0
 
-        let interval = setInterval(function() {
+        setInterval(function() {
             if (opacity != 100) {
                 opacity += 2
                 element.style.opacity = opacity / 100
