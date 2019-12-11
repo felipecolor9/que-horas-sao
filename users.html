@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
     <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="css/Style_todo.css">
+    <link rel="stylesheet" href="css/Style_users.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <script src="script/Animations.js"></script>
     <script src="script/InitBackground.js"></script>
-    <title>Todo</title>
-
 </head>
 
 <body onload="init()">
-    <div id="title_page_default"> Post-it online</div>
+    <div id="title_page_default">Usuários</div>
 
     <section class="container" id="left_navbar">
         <ul id="navbar">
 
-            <a class="navbar_link" href="/index.html">
-                <li class="left_navbar_item" id="left_navbar_item1">Voltar</li>
+            <a class="navbar_link" href="/toDo.html">
+                <li class="left_navbar_item" id="left_navbar_item1">Post-its</li>
             </a>
-            <a class="navbar_link" href="/users.html">
-                <li class="left_navbar_item" id="left_navbar_item2">Usuários</li>
+            <a class="navbar_link" href="/index.html">
+                <li class="left_navbar_item" id="left_navbar_item2">Voltar</li>
             </a>
             <a class="navbar_link" href="/reminder.html">
                 <li class="left_navbar_item" id="left_navbar_item3">Lembretes</li>
@@ -32,23 +30,28 @@
         </ul>
     </section>
 
-    <section>
+    <section class="container" id="principal_section">
+
         <div class="box_default">
-            <p style="margin-top: 0;">Adicione anotações para se lembrar mais tarde</p>
+            <p style="margin-top: 0;">Adicione usuários ao sistema com nome completo, ID (o código deve ser único) e categoria encarregada.</p>
+            <div id="add_postit">
+                NOME COMPLETO: <input class="postit_input" name="user_name" id="user_name" type="text">
+                <br> ID: <input class="postit_input" name="postit_content" id="postit_content" type="number">
+                <br> SEXO: <input type="radio" name="gender" value="male" checked> Masculino
+                <input type="radio" name="gender" value="female"> Feminino<br><br> CATEGORIA: <input type="image"><br>
+                <button type="button" id="btn_adicionar">Adicionar</button>
+                <button type="button" id="btn_mostrar">Mostrar em console</button>
+            </div>
+        </div>
+
+
+        <div class="box_default">
+            <p style="margin-top: 0;">Adicione usuários ao sistema com nome completo, ID (o código deve ser único) e categoria encarregada.</p>
             <div id="add_postit">
                 NOME: <input class="postit_input" name="postit_name" id="postit_name" type="text">
                 <br> CONTEUDO: <input class="postit_input" name="postit_content" id="postit_content" type="text">
                 <button type="button" id="btn_adicionar">Adicionar</button>
                 <button type="button" id="btn_mostrar">Mostrar em console</button>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="box_default" style="width: 45%">
-            <h2>Lista: </h2>
-            <div id="div1">
-
             </div>
         </div>
     </section>
@@ -65,8 +68,6 @@
             <a href="https://www.facebook.com/QuinnCansada" id="fb_link"><i class="fab fa-facebook fa-3x" target="_blank"rel="noopener"></i></a>
             <a href="https://www.instagram.com/the.hendrixx/" id="ig_link" target="_blank"><i class="fab fa-instagram fa-3x"rel="noopener"></i></a>
     </footer>
-
-    <script src="script/todo_object.js"></script>
 </body>
 
 </html>

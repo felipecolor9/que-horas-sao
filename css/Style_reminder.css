@@ -1,0 +1,24 @@
+#title_page_default {
+    font-size: 30pt;
+    text-align: center;
+    padding: 20px;
+}
+
+.left_navbar_item {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: white;
+    margin: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 5em;
+    height: 5em;
+    border-radius: 70px;
+    box-shadow: 1px 1px 1px 1px #0000007a;
+    transition: .1s ease-in;
+}
+
+.left_navbar_item:hover {
+    background-color: #cccccc
+}

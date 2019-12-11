@@ -37,25 +37,6 @@ footer:hover {
     color: black;
 }
 
-#left_navbar {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    margin-left: 0;
-}
-
-#git_link,
-#wpp_link,
-#fb_link,
-#ig_link {
-    text-decoration: none;
-    color: black;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
 #title_page_default {
     font-size: 30pt;
     text-align: center;
@@ -81,19 +62,12 @@ footer:hover {
     background-color: #cccccc
 }
 
-#navbar_default {
-    list-style-type: none;
-    padding: 0;
-    margin-left: 0;
-}
-
 .box_default {
     text-overflow: ellipsis;
     background: #ffffff;
     float: left;
-    width: 89%;
     height: auto;
-    margin: 2em;
+    margin: 1em;
     margin-top: 0;
     margin-bottom: 15em;
     border-radius: 10px;
@@ -115,4 +89,42 @@ footer:hover {
 .postit_input {
     margin-bottom: 1em;
     width: 100%;
+}
+
+.generatedDiv {
+    background: #dddddd;
+    margin: 4px;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 3em;
+    transition: max-height 0.55s ease-in;
+    overflow: hidden;
+    word-wrap: break-word;
+    -webkit-transition: max-height 0.55s;
+}
+
+.generatedDiv:hover {
+    background: #9de64a;
+    max-height: 300px
+}
+
+.generatedDiv p {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.generatedDiv:hover p {
+    display: inline
+}
+
+.btn {
+    float: right;
+    margin: 10px;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
 }

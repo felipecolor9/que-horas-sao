@@ -1,0 +1,66 @@
+#title_page_default {
+    font-size: 30pt;
+    text-align: center;
+    padding: 20px;
+}
+
+.left_navbar_item {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: white;
+    margin: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 5em;
+    height: 5em;
+    border-radius: 70px;
+    box-shadow: 1px 1px 1px 1px #0000007a;
+    transition: .1s ease-in;
+}
+
+.left_navbar_item:hover {
+    background-color: #cccccc
+}
+
+.box_default {
+    text-overflow: ellipsis;
+    background: #ffffff;
+    float: left;
+    width: 47%;
+    height: auto;
+    margin: 1em;
+    margin-top: 0;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 3px 3px 3px #00000062;
+}
+
+#principal_section {
+    float: left;
+    width: 90%;
+    align-content: center;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+#add_postit {
+    background: #cccccc;
+    width: 100%;
+    height: auto;
+    border: 1px;
+    padding: 1em;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center
+}
+
+.postit_input {
+    margin-bottom: 1em;
+    width: 100%;
+}
